@@ -1,0 +1,18 @@
+.login-box {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+    width: 400px;
+    border: 1px solid #282c34;
+    border-radius: 15px;
+    height: 300px;
+}
+
+.login-box .input {
+    width: 350px;
+    margin-top: 15px;
+}
