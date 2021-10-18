@@ -7,7 +7,7 @@ import 'semantic-ui-css/semantic.min.css'
 import { FronteggProvider } from '@frontegg/react';
 
 const contextOptions = {
-    baseUrl: 'https://[YOUR-WORKSPACE].frontegg.com',
+    baseUrl: 'https://perfectmatch.frontegg.com',
 };
 
 // Replace this with your app logo 👇

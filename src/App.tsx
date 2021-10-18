@@ -7,11 +7,15 @@ import {
 } from 'react-router-dom';
 import LoginPage from "./Login";
 import HomePage from './Home';
+import ActivateAccountPage from "./ActivateAccount";
 
 function App() {
     return (
         <div className="App">
             <Switch>
+                <Route path="/activate">
+                    <ActivateAccountPage />
+                </Route>
                 <Route path="/login">
                     <LoginPage />
                 </Route>

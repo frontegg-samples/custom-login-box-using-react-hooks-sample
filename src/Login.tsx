@@ -59,6 +59,7 @@ function LoginPage() {
                 </Input>
                 {isLoginWithPassword() && <Input size={"large"}
                                                  iconPosition='left'
+                                                 type="password"
                                                  onChange={handlePasswordChange}
                                                  placeholder='Password'>
                     <Icon name='key' />
