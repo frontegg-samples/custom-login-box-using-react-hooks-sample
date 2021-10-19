@@ -7,7 +7,7 @@ import 'semantic-ui-css/semantic.min.css'
 import { FronteggProvider } from '@frontegg/react';
 
 const contextOptions = {
-    baseUrl: 'https://[YOUR-DOMAIN-HERE].frontegg.com',
+    baseUrl: 'https://loudapi.frontegg.com',
 };
 
 // Replace this with your app logo 👇

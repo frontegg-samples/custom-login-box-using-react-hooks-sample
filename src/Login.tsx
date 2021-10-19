@@ -1,16 +1,51 @@
-import {Button, Dimmer, Icon, Input, Loader} from 'semantic-ui-react'
+import {Button, Dimmer, Divider, Icon, Input, Loader} from 'semantic-ui-react'
 import "./Login.css";
-import {useAuth, useAuthActions} from "@frontegg/react";
+import {useAuth, useAuthActions, useSocialLoginActions, useSocialLoginState} from "@frontegg/react";
 import { LoginStep } from '@frontegg/redux-store';
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import { useHistory } from "react-router-dom";
+
+function SocialLoginsWrapper() {
+    const {firstLoad, error, loading, socialLoginsConfig} = useSocialLoginState();
+
+    const { loadSocialLoginsConfiguration } = useSocialLoginActions();
+    useEffect(() => {
+        if (firstLoad) {
+            loadSocialLoginsConfiguration();
+        }
+    }, [loadSocialLoginsConfiguration, firstLoad]);
+
+    if (error) {
+        return <div className='fe-error-message'>{error}</div>;
+    }
+
+    if (firstLoad) {
+        return <Loader/>;
+    }
+
+    if (!socialLoginsConfig?.length || !socialLoginsConfig.some(({ active }) => active)) {
+        return null;
+    }
+
+    return (
+        <div>
+            <Divider />
+            {socialLoginsConfig.map((l) => {
+                return <Button>{l.type}</Button>
+            })}
+        </div>
+    )
+}
 
 function LoginPage() {
     const { loginState, isAuthenticated, user } = useAuth();
     const actions = useAuthActions();
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     let history = useHistory();
+
+
 
     console.log('user - ', user);
     console.log('loginState - ', loginState);
@@ -68,6 +103,7 @@ function LoginPage() {
 
                 {isPreLogin() && <Button onClick={handlePrelogin}>Continue</Button>}
                 {isLoginWithPassword() && <Button onClick={handleLoginWithPassword}>Login</Button>}
+                <SocialLoginsWrapper />
             </div>
         </div>
     )
