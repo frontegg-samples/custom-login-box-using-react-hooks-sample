@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47d7e696-1ab5-4152-8f45-95d4dd191166" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SocialLogins.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SocialLoginsCallback.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +49,10 @@
       <option name="presentableId" value="Default" />
       <updated>1634472102995</updated>
       <workItem from="1634472104980" duration="5494000" />
+      <workItem from="1634565873480" duration="4521000" />
+      <workItem from="1634709657786" duration="23000" />
+      <workItem from="1634709732771" duration="1597000" />
+      <workItem from="1635073013704" duration="789000" />
     </task>
     <servers />
   </component>
@@ -67,5 +69,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -8,17 +8,21 @@ import {
 import LoginPage from "./Login";
 import HomePage from './Home';
 import ActivateAccountPage from "./ActivateAccount";
+import SocialLogins from "./SocialLogins";
 
 function App() {
     return (
         <div className="App">
             <Switch>
-                <Route path="/activate">
+                <Route path="/account/activate">
                     <ActivateAccountPage />
                 </Route>
-                <Route path="/login">
+                <Route path="/account/login">
                     <LoginPage />
                 </Route>
+                {/*<Route path="/account/social/success">*/}
+                {/*    <SocialLoginsCallbackPage />*/}
+                {/*</Route>*/}
                 <Route path="/">
                     <HomePage />
                 </Route>
